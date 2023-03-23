@@ -1,0 +1,22 @@
+@import '/src/styles/variables.scss';
+
+.header {
+    width: 100%;
+    padding: 30px 20px;
+    background-color: $theme-2;
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo__name {
+    font-size: 20px;
+    transition: 0.2s ease-in;
+
+    &:hover {
+        color: $theme-3;
+    }
+}

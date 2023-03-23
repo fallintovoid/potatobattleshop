@@ -1,0 +1,11 @@
+@import '/src/styles/variables.scss';
+@import '/src/styles/mixins.scss';
+
+.page {
+    padding: 20px 80px;
+    background-color: $theme-1;
+
+    @include for-phone-only {
+        padding: 10px 20px;
+    }
+}
