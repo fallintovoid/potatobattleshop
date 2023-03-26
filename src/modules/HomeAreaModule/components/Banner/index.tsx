@@ -1,16 +1,10 @@
-import { Montserrat } from 'next/font/google';
 import React, { useEffect, useState } from 'react';
 import s from './Styles.module.scss';
 import cn from 'classnames';
 import Image from 'next/image';
 
-const montserrat = Montserrat({
-  weight: ['700'],
-  subsets: ['latin'],
-});
-
 const info = {
-  url: 'potatoe.org',
+  url: 'https://potatoebattle.de/shop',
 };
 
 const Banner = () => {
@@ -31,14 +25,14 @@ const Banner = () => {
 
   const defaultInnerChilds = (
     <>
-      <h3 className={s.banner_url_text}>Unser URl: {info.url}</h3>
+      <h3 className={s.banner_url_text}>{info.url}</h3>
       <h3 className={s.banner_url_text_copy}>Copy URL</h3>
     </>
   );
   const isClickedInnerChilds = <h3 className={s.orange}>Copied</h3>;
 
   return (
-    <div className={cn(s.banner, montserrat.className)}>
+    <div className={s.banner}>
       <div className={s.banner_left}>
         <h1 className={s.banner_topic}>
           Welcome in{' '}

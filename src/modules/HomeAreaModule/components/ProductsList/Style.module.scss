@@ -1,0 +1,14 @@
+@import '/src/styles/mixins.scss';
+
+.list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    overflow-y: auto;
+    max-height: 80vh;
+
+    @include for-phone-only {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,73 @@
+@import '/src/styles/variables.scss';
+@import '/src/styles/mixins.scss';
+
+.item {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #f1eff9;
+    display: flex;
+    border-bottom: 1px solid rgb(82, 82, 82);
+    border-width: 80%;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &:hover {
+        background-color: #EEA561;
+        color: white;
+    }
+
+    &:hover .image_inner {
+        background-color: #EEA561;
+    }
+}
+
+.cost {
+    font-size: 20px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.info {
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.image_wrapper {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+    @include for-phone-only {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+}
+
+.image_inner {
+    width: 100%;
+    height: 100%;
+    background-color: #f1eff9;
+    padding: 10px;
+    transition: 0.2s ease-in;
+     @include for-phone-only {
+        padding: 3px;
+    }
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

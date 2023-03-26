@@ -1,0 +1,18 @@
+@import '/src/styles/mixins.scss';
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+
+    @include for-phone-only {
+        flex-direction: column;
+    }
+}
