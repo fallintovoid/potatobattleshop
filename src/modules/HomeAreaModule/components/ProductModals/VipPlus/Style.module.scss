@@ -1,0 +1,11 @@
+.list {
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    & > li {
+        margin-left: 15px;
+        color: inherit;
+    }
+}

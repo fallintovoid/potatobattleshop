@@ -6,14 +6,12 @@ import s from './Style.module.scss';
 type Props = {
   onClose: () => void;
   title: string;
-  isOpen: boolean;
 };
 
 const Modal = ({
   onClose,
   title,
-  isOpen,
-  children,
+  children
 }: PropsWithChildren<Props>) => {
   const onEscape = (e: KeyboardEvent) => {
     if (e.key === 'Escape') {
@@ -44,6 +42,22 @@ const Modal = ({
           />
         </button>
         <main className={s.modal_content}>{children}</main>
+        <h3 className={s.protocol}>
+          Bitte schreiben sie folgenden Discord Account an: <br />
+          <strong>ExampleACC#123</strong> <br />
+          Mit folgendem Bestellungsprotokoll:
+          <ul className={s.protocol_list}>
+            <li className={s.protocol_list_item}>Ingame Name</li>
+            <li className={s.protocol_list_item}>
+              Gewünschtes Produkt
+            </li>
+            <li className={s.protocol_list_item}>
+              Bezahlungsmethode ( <strong>PayPal F&F</strong>{' '}
+              (Käuferschutz auf Anfrage) /{' '}
+              <strong>PaySafeCard</strong> )
+            </li>
+          </ul>
+        </h3>
       </div>
     </div>,
     document.body

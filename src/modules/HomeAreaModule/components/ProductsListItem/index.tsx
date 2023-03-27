@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { IProduct } from '../../types/product.interface';
 import Modal from '../Modal';
+import ModalSelector from '../ModalSelector';
 import s from './Style.module.scss';
 
 type Props = {
@@ -36,13 +37,7 @@ const ProductsListItem = ({ product }: Props) => {
         <h1 className={s.cost}>{product.cost}€</h1>
       </li>
       {isModalOpen && (
-        <Modal
-          isOpen={isModalOpen}
-          onClose={onClose}
-          title={product.name}
-        >
-          Hello
-        </Modal>
+        <ModalSelector onClose={onClose} title={product.name} />
       )}
     </>
   );
