@@ -51,8 +51,8 @@ const Banner = () => {
         <Image
           src="/images/banner.png"
           alt="banner"
-          width={10}
-          height={10}
+          width={200}
+          height={200}
           className={s.banner_image}
         />
       </div>
