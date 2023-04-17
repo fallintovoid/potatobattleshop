@@ -44,7 +44,7 @@ const Modal = ({
         <main className={s.modal_content}>{children}</main>
         <h3 className={s.protocol}>
           Bitte schreiben sie folgenden Discord Account an: <br />
-          <strong>ExampleACC#123</strong> <br />
+          <strong>PotatoeBattleShop#8026</strong> <br />
           Mit folgendem Bestellungsprotokoll:
           <ul className={s.protocol_list}>
             <li className={s.protocol_list_item}>Ingame Name</li>
