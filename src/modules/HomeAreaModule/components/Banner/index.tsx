@@ -4,7 +4,7 @@ import cn from 'classnames';
 import Image from 'next/image';
 
 const info = {
-  url: 'https://potatoebattle.de/shop',
+  url: 'https://potatoebattle.shop/',
 };
 
 const Banner = () => {
@@ -35,7 +35,7 @@ const Banner = () => {
     <div className={s.banner}>
       <div className={s.banner_left}>
         <h1 className={s.banner_topic}>
-          Welcome in{' '}
+          Willkommen in{' '}
           <span className={s.orange}>PotatoeBattleShop</span>
         </h1>
         <div className={s.banner_url_wrapper}>

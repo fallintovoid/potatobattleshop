@@ -15,7 +15,7 @@ export const getStaticProps: GetStaticProps<Props> = () => {
       name: 'VIP-Mitgliedschaft',
       src: '/icons/favicon.png',
       type: 'prevelege',
-      cost: 10,
+      cost: 5,
     },
     {
       name: 'VIP+ Mitgliedschaft',
